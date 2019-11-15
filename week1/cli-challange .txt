@@ -1,0 +1,41 @@
+
+
+1)How do I create a hidden file or folder? How do I display it in the CLI?
+
+	- You can use "touch .filename" to create hidden file,
+		      "mkdir .foldername" to create hidden folder. 
+
+	- You can use "ls -a" to display both hidden files and folders.
+
+
+2)How do I create multiple nested directories, like /c/Users/myusername/these/folders/are/just/for/fun?
+
+	- You can use "mkdir -p dir1/dir2/dir3/dir4/dir5" command to make nested directories at one using command. 
+	- If you also want to view the directory creation process, You can use "mkdir -pv dir1/dir2/dir3/dir4/dir5".
+	- To see the contents of the new nested directories you can use "ls -R dir1/".
+
+
+
+
+3)How do I append a message to a file, without a newline character, so the output would be:
+	first message
+	second message
+
+	(first way)	-$ cat >> filename <<EOL
+			> first message
+			> second message
+			> EOL
+
+	(second way)	echo "first message"> greetings.txt | echo "second message" >> filename
+
+
+4)Write a sequence of commands to make four groups of students. 
+  Each group should contain four students. One student cannot be part of multiple groups.
+
+	$ shuf names.txt -o names.txt 
+	$ sed -n '1,4p' names.txt > group1.txt
+	$ sed -n '5,8p' names.txt > group2.txt
+	$ sed -n '9,12p' names.txt > group3.txt
+	$ sed -n '13,16p' names.txt > group4.txt
+
+	

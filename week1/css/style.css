@@ -1,0 +1,297 @@
+body{
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #545454;
+    font-size: 1.5rem;
+}
+
+.header{
+    text-align: center;
+    position: relative;    
+    height: 90px;
+}
+
+.transparent{
+    height: 90px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.9;
+    background-color: #f0fff0;
+    z-index: 1;
+}
+.logo{
+    position: fixed;
+    left: 20px;
+    top: 10px;
+    margin-top: 0;
+    z-index: 2;
+}
+
+.hyf{
+width: 70%;
+}
+
+.hyf:hover{
+    border: 2px outset #45b29a;
+    border-radius: 10px;
+}
+
+.nav{
+    position: fixed;
+    right: 50px;
+    top: 10px;
+    z-index: 2;
+}
+
+li{
+    font-family: 'Montserrat', sans-serif;
+    float: left;
+    padding: 10px;
+    display: block;
+    font-size: 1.5rem;
+}
+
+li a{
+    text-decoration: none;
+    color: #66BFBF;
+}
+
+li a:hover {
+    color: #eead2b;
+  }
+
+.pro:hover {
+    color: #eead2b;
+}
+
+h1 {
+    color: #45b29a;
+    font-family: 'Sacramento', cursive;
+    font-size: 5em;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+h2{
+    color: #66BFBF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+h3{
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+p{
+    line-height: 2;
+}
+
+hr{
+    border: dotted #C9CACB 6px;
+    border-bottom: none;
+    width: 10%;
+    margin: 80px auto;
+}
+
+.top-container{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.my-name{
+    background-color: #f8f8ff;
+}
+
+.amstrdm{
+    width: 30%;   
+}
+
+.my-name h2{
+    margin: 0 auto;
+}
+
+.profile{
+    width: 50%;
+    margin: 50px auto;
+}
+
+.intro{
+    width: 70%;
+    margin: auto;
+}
+
+.mypicture{
+    width: 30%;
+    border-radius: 50%;
+}
+
+.skill-row {
+    margin: 50px auto;
+    width: 50%;
+    text-align: left;
+}
+
+.skill-p{
+    margin-bottom: 100px;
+}
+
+.pc{
+    width: 35%;
+    float: left;
+    margin-right: 30px;
+}
+
+.mountain{
+    width: 30%;
+    float: right;
+    margin-left: 40px;
+}
+
+.contact-me{
+    width: 50%;
+    margin: 50px auto;
+}
+
+.contact-p {
+    width:80%;
+    margin: 0 auto 50px auto;
+}
+
+.bottom-footer{
+    background-color: #415058;
+    padding: 20px 0 17px;
+    border-top: 6px solid #66BFBF;
+}
+
+.trademark {
+    color: #C9CACB;
+    margin: 0 auto 0;
+}
+
+.footer-link {
+    width: 2%;
+    padding: 5px 10px;
+}
+
+.btn{
+    background: #72dae1;
+    background: linear-gradient(#72dae1, #287fce);
+    border-radius: 17px;
+    padding: 10px 21px;
+    color: #ffffff;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover {
+   background: #287FCE;
+   background-image: -webkit-linear-gradient(top, #287FCE, #72DAE1);
+   background-image: -moz-linear-gradient(top, #287FCE, #72DAE1);
+   background-image: -ms-linear-gradient(top, #287FCE, #72DAE1);
+   background-image: -o-linear-gradient(top, #287FCE, #72DAE1);
+   background-image: linear-gradient(to bottom, #287FCE, #72DAE1);
+}
+
+@media screen and (max-width: 1024px) {
+    body{
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    .hyf{
+        width: 50%;
+    }
+    .logo{
+        margin-left: 0;
+        left: 0;
+    }
+    .nav{
+        right: 10px;
+    }
+    .nav ul li{
+        font-size: 1rem;
+    }
+    .profile{
+        width: 70%;
+    }
+    .skill-row{
+        width: 70%;
+        padding: 0 50px;
+    }
+    .contact-me{
+        width: 70%;
+        padding: 0 50px;
+    }
+    .btn{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    body{
+        font-size: 0.9rem;
+    }
+    h1 {
+        font-size: 3rem;
+        padding-top: 150px;
+    }
+    
+    h2{
+        font-size: 1.6rem;
+    }
+    h3{
+        font-size: 0.9rem;
+    }
+    .hyf{
+        width: 30%;
+    }
+    .nav{
+        position: relative;
+        left: 20px;
+        top: 90px;
+    }
+    .nav ul li{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px;
+        text-align: left;
+    }
+    li a:hover {
+        color: #66BFBF;
+      }
+    .nav ul li :hover {
+        background-color:#ccffff;
+    }
+    .profile{
+        width: 70%;
+    }
+    .skill-row{
+        width: 70%;
+        padding: 0 50px;
+    }
+    .contact-me{
+        width: 70%;
+        padding: 0 50px;
+    }
+    .btn{
+        font-size: 0.8rem;
+    }
+}
